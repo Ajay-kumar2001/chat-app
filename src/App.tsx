@@ -1,24 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import LoginForm from './components/login';
+import Signup from './components/Signup';
+import ContactList from './components/ContactList';
+import Message from './components/message';
+import ProfileBar from './components/profileBar';
+import ChatBox from './components/chatBox';
+import ChatPage from './pages/chatPage';
+import { ContactProvider } from './store/ContactInfo';
+import Routing from './router';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AddGroupOrContact from './components/AddGroupOrContact';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="landingPage">
+<ContactProvider>
+ <Routing/>
+</ContactProvider>
     </div>
   );
 }

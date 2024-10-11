@@ -1,0 +1,35 @@
+.loginForm{
+text-align: center;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+gap: 10px;
+/* margin-top: 15%; */
+border:2px solid #1d1c1c; 
+border-radius: 10px;
+padding: 10px;
+width:500px;
+background-color: rgba(16, 236, 141, 0)
+
+}
+
+.textAline {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    
+    
+  }
+  .loginButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 160px;
+    
+  }
+  .login{
+    padding: 10px;
+    margin-right: 60px;
+    cursor: pointer;
+  }

@@ -1,0 +1,66 @@
+.message-container {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+.message-container.user {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.message-container.contact {
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.message {
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 7.5px;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+}
+.message-container.user .message {
+  background-color: #d9fdd3;
+}
+.message-container.contact .message {
+  background-color: #fff;
+}
+.timestamp {
+  font-size: 0.75em;
+  color: #667781;
+  float: right;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.tick {
+  font-size: 0.75em;
+  color: #667781;
+  float: right;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+/* Tail for messages */
+.message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+}
+.message-container.user .message::before {
+  right: -6px;
+  background: radial-gradient(circle at 0 100%, rgba(0,0,0,0) 10px, #d9fdd3 0);
+  transform: rotate(-90deg);
+}
+.message-container.contact .message::before {
+  left: -6px;
+  background: radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 10px, #fff 0);
+  transform: rotate(90deg);
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .message-container {
+    max-width: 85%;
+  }
+}

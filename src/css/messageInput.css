@@ -1,0 +1,71 @@
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .chatBox {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f3f3faf4;
+  }
+  
+  .message-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f0f0f0;
+  }
+  
+  .left-icons, .right-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 10px;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+  }
+  
+  .userMessage {
+    align-self: flex-end;
+    background-color: #DCF8C6;
+  }
+  
+  .contactMessage {
+    align-self: flex-start;
+    background-color: #fff;
+  }
+  
+  /* Customize the scrollbar for the chatBox */
+  .chatBox::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .chatBox::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .chatBox::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
